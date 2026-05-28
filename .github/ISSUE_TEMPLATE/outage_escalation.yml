@@ -50,10 +50,10 @@ body:
     attributes:
       label: Was the runbook followed to mitigate the issue?
       options:
-        - ""
         - "Yes"
         - "No"
         - No runbook available
+      default: 0
     validations:
       required: true
 
@@ -62,11 +62,11 @@ body:
     attributes:
       label: Runbook Result
       options:
-        - ""
         - Successful
         - Failed
         - Partially successful
         - N/A
+      default: 0
     validations:
       required: true
 
