@@ -50,8 +50,8 @@ body:
     attributes:
       label: Was the runbook followed to mitigate the issue?
       options:
-        - No
-        - Yes
+        - "No"
+        - "Yes"
         - No runbook available
       default: 0
     validations:
