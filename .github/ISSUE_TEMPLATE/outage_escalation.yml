@@ -1,14 +1,14 @@
-name: PagerDuty Escalation
+name: Outage Escalation
 description: How to engage on call CX Team
-title: "[PagerDuty Escalation to CX Team]"
-labels: ["PagerDuty", "needs-triage"]
-assignees: []
+title: "[Outage Escalation to CX Team]"
+labels: ["Outage"]
 body:
   - type: markdown
     attributes:
       value: |
-        ## PagerDuty Escalation
-        Copy and paste here the title of the PagerDuty Incident you want to escalate to the on call CX Team
+        ## Outage Escalation
+        **Use this form only to report outages that need immediate attention from the on call CX Team**
+        
 
   - type: input
     id: incident-title
