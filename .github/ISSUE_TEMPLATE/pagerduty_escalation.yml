@@ -19,15 +19,13 @@ body:
     validations:
       required: true
 
-  - type: dropdown
+  - type: checkboxes
     id: service-outage
     attributes:
       label: Is this incident currently causing a service outage to your production environment?
       options:
-        - "Yes"
-        - "No"
-    validations:
-      required: true
+        - label: "Yes"
+          required: true
 
   - type: dropdown
     id: outage-status
