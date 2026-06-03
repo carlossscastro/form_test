@@ -1,0 +1,97 @@
+name: Outage Escalation
+description: How to engage on call CX Team
+title: "[Outage Escalation to CX Team]"
+labels: ["Outage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Outage Escalation
+        **Use this form only to report outages that need immediate attention from the on call CX Team**
+        
+
+  - type: input
+    id: incident-title
+    attributes:
+      label: PagerDuty Incident Title
+      description: Copy and paste the title of the PagerDuty Incident
+      placeholder: e.g. "[P1] Database connection pool exhausted on prod-us-east"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: service-outage
+    attributes:
+      label: Is this incident currently causing a service outage to your production environment?
+      options:
+        - label: "Yes"
+          required: true
+
+  - type: textarea
+    id: service-impact
+    attributes:
+      label: Current Impact Description
+      description: Please describe the current impact
+      placeholder: Describe what services or users are affected...
+    validations:
+      required: true
+
+  - type: input
+    id: runbook-link
+    attributes:
+      label: Runbook Link
+      description: Runbook link from the Alert/Monitor
+      placeholder: https://...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: runbook-followed
+    attributes:
+      label: Was the runbook followed to mitigate the issue?
+      options:
+        - "No"
+        - "Yes"
+        - No runbook available
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: runbook-result
+    attributes:
+      label: Runbook Result
+      options:
+        - Successful
+        - Failed
+        - Partially successful
+        - N/A
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: runbook-failure-details
+    attributes:
+      label: Runbook Failure Details
+      description: If failed or partially successful, please specify where it failed and what steps were taken
+      placeholder: Leave blank if runbook was successful or N/A
+
+  - type: input
+    id: slack-thread
+    attributes:
+      label: Slack Thread
+      description: Link to the Slack thread if available
+      placeholder: https://ibm.enterprise.slack.com/...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **@Coralogix-CS** Dear CX Team, Please reply back in the issue where you received this message and reach out to the IBM ICL SRE engineer in the [dragonlog-cx-cie-partner](https://ibm.enterprise.slack.com/archives/C069R8WJD55) channel.
