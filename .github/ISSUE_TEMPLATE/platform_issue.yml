@@ -1,7 +1,6 @@
 name: Platform Issue
-description: How to engage SRE/RND CX Team
+description: How to engage the SRE/RND CX Team for non outage requests
 title: "[Platform Request to CX Team]"
-labels: ["Outage"]
 body:
   - type: markdown
     attributes:

@@ -7,6 +7,9 @@ assignees: ''
 
 ---
 
+If applicable, follow the requirements of the ibm-cloud-logs troubleshooting runbooks available at:
+https://pages.github.ibm.com/Observability/runbooks/runbooks.html
+
 **Description**
 A clear and concise description of what the bug is.
 
