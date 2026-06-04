@@ -1,23 +1,21 @@
 name: Platform Issue
-description: How to engage on call CX Team
-title: "[Outage Escalation to CX Team]"
+description: How to engage SRE/RND CX Team
+title: "[Platform Request to CX Team]"
 labels: ["Outage"]
 body:
   - type: markdown
     attributes:
       value: |
         ## Platform Issue
-        **Use this form only to report outages that need immediate attention from the on call CX Team**
+        **Use this form to report any issues that require help from the SRE/RND CX Team**
         
 
   - type: input
     id: incident-title
     attributes:
       label: PagerDuty Incident Title
-      description: Copy and paste the title of the PagerDuty Incident
-      placeholder: e.g. "[P1] Database connection pool exhausted on prod-us-east"
-    validations:
-      required: true
+      description: Copy and paste the title of the PagerDuty Incident, if applicable
+      placeholder: e.g. "[P3] Database connection pool exhausted on prod-us-east"
 
   - type: textarea
     id: service-impact
