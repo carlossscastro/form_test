@@ -8,7 +8,7 @@ body:
       value: |
         ## Outage Escalation
         **Use this form only to report outages that need immediate attention from the on call CX Team**
-        **Alternatively use the [Platform Issue](https://github.com/carlossscastro/form_test/blob/main/.github/ISSUE_TEMPLATE/platform_issue.yml) form to report any non-outage issue to the CX team** 
+        **Alternatively use the [Platform Issue](https://github.com/carlossscastro/form_test/issues/new?template=platform_issue.yml) form to report any non-outage issue to the CX team** 
         
 
   - type: input
