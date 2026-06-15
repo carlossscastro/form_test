@@ -1,6 +1,6 @@
 ---
 name: Support Request
-about: Create a report to help us improve
+about: Create support issue. Use this form to request help on customer support tickets, general improvements, bug reports, runbook improvements, etc...
 title: "[Support Case]"
 labels: Case, needs-triage
 assignees: ''
