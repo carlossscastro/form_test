@@ -25,6 +25,17 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Normal (will be addressed during working hours)
+        - High (To be addressed asap. Could potentially evolve into an outage)
+      default: 0
+    validations:
+      required: true
+
   - type: input
     id: runbook-link
     attributes:
