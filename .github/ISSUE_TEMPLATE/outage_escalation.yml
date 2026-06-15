@@ -8,6 +8,7 @@ body:
       value: |
         ## Outage Escalation
         **Use this form only to report outages that need immediate attention from the on call CX Team**
+        **ALternatively use the "Platform Issue" form to report any non-outage issue to the CX team** 
         
 
   - type: input
